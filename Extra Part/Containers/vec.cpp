@@ -43,5 +43,12 @@ int main(){
         cout << type << " "; // 10 10 10 10
     }
     cout << endl;
+    // Suppose we want to pass our vector one into vector 2
+    vector<int> vec1 = {1, 2, 3};
+    vector<int> vec2(vec1);
+    for(int values: vec2){
+        cout << values << " "; // 1 2 3
+    }
+    cout << endl;
     return 0;
 }
