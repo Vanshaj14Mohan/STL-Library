@@ -30,5 +30,12 @@ int main(){
     // Printing element at front and back
     cout << "Element at front: " << vec.front() << endl; //1
     cout << "Element at back: " << vec.back() << endl; // 5
+
+    // Other way of initializing a vector
+    vector<int> nums = {1, 2, 3, 4, 5}; // with no empty elements:
+    for(int val: nums){
+        cout << val<< " "; // 1 2 3 4 5
+    }
+    cout << endl;
     return 0;
 }
