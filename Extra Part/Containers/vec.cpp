@@ -27,5 +27,8 @@ int main(){
     cout << vec.at(3) << endl; // 4
     cout << vec[0] << endl; // 1
     cout << vec[2] << endl; // 3
+    // Printing element at front and back
+    cout << "Element at front: " << vec.front() << endl; //1
+    cout << "Element at back: " << vec.back() << endl; // 5
     return 0;
 }
