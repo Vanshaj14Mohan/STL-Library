@@ -4,6 +4,7 @@
 using namespace std;
 
 int main(){
+    // Method 1 : Creating a null vector
     vector<int> vec; // Size zero as we have not stored anything yet:
     vec.push_back(1);
     vec.push_back(2);
