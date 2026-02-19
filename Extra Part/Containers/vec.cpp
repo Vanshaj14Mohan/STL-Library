@@ -80,7 +80,14 @@ int main(){
     // deleting from 3 - 5;
     elem.erase(elem.begin() + 2, elem.begin() + 4); // 3 -5 
     for(int val: elem){
-        cout << val << " "; // 1 2 5 6 7
+        cout << val << " "; // 1 2 5 6 7, 3-5 erased
+    }
+    cout << endl;
+    // Now if we want to insert element in the middle of a vector we use insert() for it
+    vector<int>trial = {1, 2, 4, 5};
+    trial.insert(trial.begin() + 2,  3);  // at index 2 we want to put value 3
+    for(int val: trial){
+        cout << val << " "; // 1 2 3 4 5
     }
     cout << endl;
     return 0;
