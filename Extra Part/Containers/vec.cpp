@@ -90,5 +90,10 @@ int main(){
         cout << val << " "; // 1 2 3 4 5
     }
     cout << endl;
+    trial.clear(); // clears the trail vector but capacity is still present
+    cout << trial.size() << endl; // 0
+    cout << trial.capacity()<< endl; // 8
+    // and to verify if our vector is empty or not
+    cout << trial.empty() << endl;
     return 0;
 }
