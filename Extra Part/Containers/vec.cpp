@@ -50,5 +50,38 @@ int main(){
         cout << values << " "; // 1 2 3
     }
     cout << endl;
+    cout << "More Functions on vectors:::::"<< endl;
+    vector<int> numb = {1, 2, 3, 4, 5};
+    numb.erase(numb.begin());
+    for(int val: numb){
+        cout << val << " "; // 2 3 4 5, 1 will be taken out
+    }
+    cout << endl;
+    // now deleting value at index 2
+    // new vector = numb = {2, 3, 4, 5}
+    numb.erase(numb.begin() + 2); 
+     for(int val: numb){
+        cout << val << " "; // 2 3 5, 4 will be taken out
+    }
+    cout << endl;
+    // same with index 1 
+    // new vector = {2, 3, 5}
+    numb.erase(numb.begin() + 1);
+    for(int val: numb){
+        cout << val << " "; // 2 5, 3 will be taken out 
+    }
+    cout << endl;
+    // And if we want to erase a range of elements from a vector
+    vector<int>elem = {1, 2, 3, 4, 5, 6, 7};
+    for(int val: elem){
+        cout << val << " "; // 1 2 3 4 5 6 7
+    }
+    cout << endl;
+    // deleting from 3 - 5;
+    elem.erase(elem.begin() + 2, elem.begin() + 4); // 3 -5 
+    for(int val: elem){
+        cout << val << " "; // 1 2 5 6 7
+    }
+    cout << endl;
     return 0;
 }
