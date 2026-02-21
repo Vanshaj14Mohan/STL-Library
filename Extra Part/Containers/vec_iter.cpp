@@ -14,5 +14,6 @@ int main(){
         cout << *(it) << " "; // *(it) as it is a iterator so de refencing so that to know where it is pointing and the value it holds
     }
     cout << endl;
+    // For reverse iterating: 
     return 0;
 }
