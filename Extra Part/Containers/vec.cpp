@@ -11,7 +11,7 @@ int main(){
     vec.push_back(3);
     vec.push_back(4);
     vec.push_back(5);
-    vec.emplace_back(6);
+    vec.emplace_back(6); // does the same thing as push_back
     cout << vec.size() << endl; // 6
     cout << vec.capacity() << endl; // 8
     for(int val: vec){ // Iterating over vector using for each loop:
@@ -44,7 +44,7 @@ int main(){
         cout << type << " "; // 10 10 10 10
     }
     cout << endl;
-    // Suppose we want to pass our vector one into vector 2
+    //4: Suppose we want to pass our vector one into vector 2
     vector<int> vec1 = {1, 2, 3};
     vector<int> vec2(vec1);
     for(int values: vec2){
