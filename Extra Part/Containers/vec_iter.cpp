@@ -10,10 +10,14 @@ int main(){
     cout << "Vector ends with: " << *(vec.end()) << endl; // Might return 0 or any random value
     // Defining an iterator in C++
     vector<int> :: iterator it;
-    for(it = vec.begin(); it != vec.end(); it ++){
-        cout << *(it) << " "; // *(it) as it is a iterator so de refencing so that to know where it is pointing and the value it holds
-    }
+    // for(it = vec.begin(); it != vec.end(); it ++){
+    //     cout << *(it) << " "; // *(it) as it is a iterator so de refencing so that to know where it is pointing and the value it holds
+    // }
     cout << endl;
     // For reverse iterating: 
+    vector<int>:: reverse_iterator rev_it;
+   for(rev_it = vec.rbegin(); rev_it != vec.rend(); it ++){
+    cout << *(rev_it) << " ";
+   }
     return 0;
 }
