@@ -31,9 +31,9 @@ int main(){
     }
     cout << endl;
     cout << "Size of second list: "<< li.size() << endl; // 5
-    // Accesing elements:
-    cout <<"Element at front: " << li.front() << endl;
-    cout << "Element at end: " << li.back() << endl;
+    // Accessing elements:
+    cout <<"Element at front: " << li.front() << endl; // 1
+    cout << "Element at end: " << li.back() << endl; // 5
     cout << "For Forward Loop Iterator " << endl;
     list<int>:: iterator data;
     for(data = li.begin(); data != li.end(); data++){
@@ -42,6 +42,7 @@ int main(){
     cout << endl;
     cout << "For Backward Loop Iterator " << endl;
     list<int> lis = {1, 2, 3, 4};
+    // using auto
     for(auto li = lis.rbegin(); li != lis.rend(); li++){
         cout << *(li) << " "; // 4 3 2 1
     }
