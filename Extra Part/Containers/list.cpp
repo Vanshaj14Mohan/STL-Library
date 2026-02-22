@@ -16,10 +16,10 @@ int main(){
         cout << val << " "; // 6 5 4 1 2 3 
     }
     cout << endl;
-    cout << "Size of first list: "<< l.size() << endl;
+    cout << "Size of first list: "<< l.size() << endl; // 6
     // Removing elements
-    l.pop_front(); // 6 would be removed
-    l.pop_back(); // 3 would be removed
+    l.pop_front(); // 6 would be removed from front
+    l.pop_back(); // 3 would be removed from back
      for(int val: l){
         cout << val << " "; // 5 4 1 2 
     }
@@ -30,7 +30,7 @@ int main(){
         cout << val << " "; // 1 2 3 4 5 
     }
     cout << endl;
-    cout << "Size of second list: "<< li.size() << endl;
+    cout << "Size of second list: "<< li.size() << endl; // 5
     // Accesing elements:
     cout <<"Element at front: " << li.front() << endl;
     cout << "Element at end: " << li.back() << endl;
