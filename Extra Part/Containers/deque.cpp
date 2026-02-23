@@ -54,5 +54,16 @@ int main(){
       for(int val: d){
         cout << val << " "; // 2 7 3 4
     }
+    cout << endl;
+    // And to erase a range of element
+    deque<int>deq = {1, 2, 3, 4, 5};
+    for(int val: deq){
+        cout << val << " "; // 1 2 3 4 5
+    }
+    cout <<endl;
+    deq.erase(deq.begin() + 1, deq.begin() + 2);
+    for(int val: deq){
+        cout << val << " "; // 1 2 3 4 5
+    }
     return 0;
 }
