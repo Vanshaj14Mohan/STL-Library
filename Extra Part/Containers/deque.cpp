@@ -22,6 +22,21 @@ int main(){
     for(int val: d){
         cout << val << " "; // 6 2 1 3 4 5
     }
-
+    cout << endl;
+    d.pop_front();
+    d.pop_back();
+    for(int val: d){
+        cout << val << " "; // 2 1 3 4
+    }
+    cout << endl;
+    // Accessing elements
+    cout << d.at(1) << endl; // 1
+    cout << de[2]<< endl; // 3
+    // Iterating in deque
+    cout << "Forward Loop Iterator: " << endl;
+    for(auto it = d.begin(); it != d.end(); it++){
+        cout << *(it) << " "; // 2 1 3 4
+    }
+    cout << endl;
     return 0;
 }
