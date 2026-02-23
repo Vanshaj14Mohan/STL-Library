@@ -61,9 +61,10 @@ int main(){
         cout << val << " "; // 1 2 3 4 5
     }
     cout <<endl;
+    // Removing 2 and 3 ie from index 1 to 2
     deq.erase(deq.begin() + 1, deq.begin() + 2);
     for(int val: deq){
-        cout << val << " "; // 1 2 3 4 5
+        cout << val << " "; // 1 3 4 5
     }
     return 0;
 }
