@@ -38,5 +38,10 @@ int main(){
         cout << *(it) << " "; // 2 1 3 4
     }
     cout << endl;
+    cout << "Backward Loop Iterator: " << endl;
+    for(auto rev_it = d.rbegin(); rev_it != d.rend(); rev_it++){
+        cout << *(rev_it) << " "; // 4 3 1 2
+    } 
+    cout << endl;
     return 0;
 }
