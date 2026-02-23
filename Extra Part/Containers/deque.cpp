@@ -7,9 +7,9 @@ int main(){
     // 1: Creating a deque with elements
     deque<int> de = {1,2, 3};
     for(int val: de){
-        cout << val << " "<< endl; // 1 2 3
+        cout << val << " "; // 1 2 3
     }
-
+    cout << endl;
     cout << "Deque size: " << de.size() << endl; // 3
     // 2: Creating an empty deque
     deque<int> d;
@@ -43,5 +43,16 @@ int main(){
         cout << *(rev_it) << " "; // 4 3 1 2
     } 
     cout << endl;
+    // And to insert element in the middle
+    d.insert(d.begin() + 2, 7); // Inserting 7 at index 2
+    for(int val: d){
+        cout << val << " "; // 2 1 7 3 4
+    }
+    cout << endl;
+    // Erasing 1 from deque
+    d.erase(d.begin() + 1);
+      for(int val: d){
+        cout << val << " "; // 2 7 3 4
+    }
     return 0;
 }
