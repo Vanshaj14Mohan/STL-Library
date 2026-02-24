@@ -22,7 +22,7 @@ int main(){
     vector<pair<int, int>> vec = {{1, 2}, {2, 3}, {3, 4}, {4, 5}};
     // for(pair<int, int> p: vec){
     vec.push_back({5,6}); //assumes we already made a pair earlier, only work is to insert it in the very end
-    vec.emplace_back(6, 7); //it basically creates in-place objects, so no need to put in brakets
+    vec.emplace_back(6, 7); //it basically creates in-place objects
     for(auto p: vec){ // or use auto
         cout << p.first << " " << p.second << " " << endl; // 1 2, 2 3, 3 4, 4 5, 5 6, 6 7
     }
