@@ -26,6 +26,6 @@ int main(){
     for(auto p: vec){ // or use auto
         cout << p.first << " " << p.second << " " << endl; // 1 2, 2 3, 3 4, 4 5, 5 6, 6 7
     }
-    // it sorts the given pair:  sort(vec.begin(), vec.end());
+    // it sorts the given pair:  sort(vec.begin(), vec.end()); doesn't return anything
     return 0;
 }
