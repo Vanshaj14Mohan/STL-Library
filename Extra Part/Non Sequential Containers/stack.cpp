@@ -23,8 +23,8 @@ int main(){
         s.pop();
     } // 4 3 2 1
     cout << endl;
-    // Try swapping stack values with others
-    stack<int> s1;
+    // Try swapping stack values with other stack
+    stack<int> s1; 
     s1.push(1);
     s1.push(2);
     s1.push(3);
