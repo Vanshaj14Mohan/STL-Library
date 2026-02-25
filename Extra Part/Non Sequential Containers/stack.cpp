@@ -1,5 +1,6 @@
 // In this we would discuss about Stack Container
-// Most important and frequently used operations on Stack
+// Stack basically works LIFO Structure: The last entry gets out first.
+// Most important and frequently used functions of Stack
 #include<iostream>
 #include<stack>
 using namespace std;
