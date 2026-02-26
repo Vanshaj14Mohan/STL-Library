@@ -9,7 +9,7 @@ int main(){
     // Creating a stack
     stack<int> s; // an empty stack 
     s.push(1);
-    s.push(2);
+    s.push(2);   
     s.push(3);
     s.push(4);
     cout << "Stack top => " << s.top() << endl; // 4
