@@ -7,7 +7,7 @@ int main(){
     int arr[] = {5, 2, 8, 7, 4};
     sort(arr, arr+ 5);
     // for descending order:
-    // sort(arr, arr+5, greater<int>());
+    // sort(arr, arr+5, greater<int>()); // would sort in descending order
     for(int val: arr){
         cout << val << " "; // 2 4 5 7 8 
     }
@@ -20,6 +20,11 @@ int main(){
     }
     cout<< endl;
     // for descending order:
-    // sort(vec.begin(), vec.end(), greater<int>());
+    //sort(vec.begin(), vec.end(), greater<int>()); // would sort in descending order
+    vector<pair<int, int>> vc = {{2,5}, {8,6}, {7,9}, {4,8}};
+    sort(vc.begin(), vc.end());
+    for(auto p: vc){
+        cout << p.first << " " << p.second << endl;
+    }
     return 0;
 }
