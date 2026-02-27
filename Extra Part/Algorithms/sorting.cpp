@@ -3,6 +3,12 @@
 #include<vector>
 using namespace std;
 
+// Making a custom comparator
+bool comparator(pair<int, int> p1, pair<int, int> p2){
+    if(p1.second < p2.second) return true;
+    else return false;
+}
+
 int main(){
     int arr[] = {5, 2, 8, 7, 4};
     sort(arr, arr+ 5);
@@ -24,6 +30,14 @@ int main(){
     vector<pair<int, int>> vc = {{2,5}, {8,6}, {7,9}, {4,8}};
     sort(vc.begin(), vc.end());
     for(auto p: vc){
+        cout << p.first << " " << p.second << endl;
+    }
+    cout << endl;
+    // to sort on the basis of second value in a pair
+    cout << "Sorting using custom comparator" << endl;
+    vector<pair<int, int>> v = {{2,7}, {8,4}, {6,8}, {4,3}};
+    sort(v.begin(), v.end(), comparator); // comparator to sort in descendiing order
+    for(auto p: v){
         cout << p.first << " " << p.second << endl;
     }
     return 0;
