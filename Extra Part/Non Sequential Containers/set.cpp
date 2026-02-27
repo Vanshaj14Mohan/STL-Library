@@ -40,7 +40,7 @@ int main(){
     cout << endl;
     cout << "Lower Bound: " << *(s1.lower_bound(2)) << endl; // return 2 as 2 is present
     cout << "Lower Bound: " << *(s1.lower_bound(3)) << endl; // return 4 as 3 is not present
-    cout << "Lower Bound: " << *(s1.lower_bound(5)) << endl; // we will get s1.end() here
+    cout << "Lower Bound: " << *(s1.lower_bound(6)) << endl; // we will get s1.end() here
     cout << "Lower Bound: " << *(s1.lower_bound(4)) << endl; // would return only 4 as lower bound
     cout<< "Upper Bound: " << *(s1.upper_bound(4)) << endl; // would return 5; upper bound condition
     // Using multiset and unordered set
